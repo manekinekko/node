@@ -665,8 +665,7 @@ Emitted when [`context.diagnostic`][] is called.
 ### Event: `'test:fail'`
 
 * `data` {Object}
-  * `duration` {number} The test duration.
-  * `error` {Error} The failure casing test to fail.
+  * `details` {Object} additional execution metadata.
   * `name` {string} The test name.
   * `testNumber` {number} The ordinal number of the test.
   * `todo` {string|undefined} Present if [`context.todo`][] is called
@@ -677,7 +676,7 @@ Emitted when a test fails.
 ### Event: `'test:pass'`
 
 * `data` {Object}
-  * `duration` {number} The test duration.
+  * `details` {Object} additional execution metadata.
   * `name` {string} The test name.
   * `testNumber` {number} The ordinal number of the test.
   * `todo` {string|undefined} Present if [`context.todo`][] is called
