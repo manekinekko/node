@@ -167,6 +167,7 @@ function TAPParser(input) {
         description: '',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
   ]);
@@ -184,6 +185,7 @@ function TAPParser(input) {
         description: '',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
   ]);
@@ -201,6 +203,7 @@ function TAPParser(input) {
         description: '',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
   ]);
@@ -221,6 +224,7 @@ not ok 222
         description: '',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
     {
@@ -232,6 +236,7 @@ not ok 222
         description: '',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
   ]);
@@ -253,6 +258,7 @@ ok 1 - parent
         description: 'parent',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
     {
@@ -264,6 +270,7 @@ ok 1 - parent
         description: 'child',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
   ]);
@@ -300,6 +307,7 @@ ok 1 - nested1
         description: '',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
     {
@@ -316,6 +324,7 @@ ok 1 - nested1
         description: 'nested2',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
     {
@@ -332,6 +341,7 @@ ok 1 - nested1
         description: 'nested3',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
     {
@@ -348,6 +358,7 @@ ok 1 - nested1
         description: 'nested4',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
     {
@@ -359,6 +370,7 @@ ok 1 - nested1
         description: 'nested1',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
   ]);
@@ -393,6 +405,7 @@ ok 4 - nested1
         description: 'test nested1',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
     {
@@ -409,6 +422,7 @@ ok 4 - nested1
         description: 'test nested2',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
     {
@@ -420,6 +434,7 @@ ok 4 - nested1
         description: 'nested2',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
     {
@@ -431,6 +446,7 @@ ok 4 - nested1
         description: 'nested1',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
   ]);
@@ -470,6 +486,7 @@ ok 6 - nested1
         description: 'test nested1',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
     {
@@ -486,6 +503,7 @@ ok 6 - nested1
         description: 'test nested2a',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
     {
@@ -497,6 +515,7 @@ ok 6 - nested1
         description: 'nested2a',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
     {
@@ -513,6 +532,7 @@ ok 6 - nested1
         description: 'test nested2b',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
     {
@@ -524,6 +544,7 @@ ok 6 - nested1
         description: 'nested2b',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
     {
@@ -535,6 +556,7 @@ ok 6 - nested1
         description: 'nested1',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
   ]);
@@ -552,6 +574,7 @@ ok 6 - nested1
         description: 'description',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
   ]);
@@ -569,6 +592,7 @@ ok 6 - nested1
         description: 'description',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
   ]);
@@ -586,6 +610,7 @@ ok 6 - nested1
         description: 'description',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
   ]);
@@ -603,6 +628,7 @@ ok 6 - nested1
         description: 'description # todo',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
   ]);
@@ -620,6 +646,7 @@ ok 6 - nested1
         description: 'description',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
   ]);
@@ -639,6 +666,7 @@ ok 6 - nested1
         description: 'description # \\ world',
         reason: 'escape # characters with \\',
         time: 0,
+        diagnostics: [],
       },
     },
   ]);
@@ -656,6 +684,7 @@ ok 6 - nested1
         description: 'description',
         reason: '##',
         time: 0,
+        diagnostics: [],
       },
     },
   ]);
@@ -675,6 +704,7 @@ ok 6 - nested1
         description: 'not skipped: https://example.com/page.html#skip is a url',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
   ]);
@@ -692,6 +722,7 @@ ok 6 - nested1
         description: '',
         reason: 'case insensitive, so this is skipped',
         time: 0,
+        diagnostics: [],
       },
     },
   ]);
@@ -709,6 +740,7 @@ ok 6 - nested1
         description: 'ok ok',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
   ]);
@@ -726,6 +758,7 @@ ok 6 - nested1
         description: 'not ok',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
   ]);
@@ -743,6 +776,7 @@ ok 6 - nested1
         description: '',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
     },
   ]);
@@ -1158,6 +1192,7 @@ not ok 1 - /test.js
         description: '/test.js',
         reason: '',
         time: 0,
+        diagnostics: [],
       },
       nesting: 0,
       comments: [
